@@ -1,0 +1,245 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1b1b32;
+  color: white;
+  font-family: Helvetica;
+  margin: 0;
+}
+
+:root{
+  --color-:white;
+}
+
+/* encabezado*/
+header{
+  color: white;
+  padding-left: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #060606;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  }
+  
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  li {
+    color: #dfdfe2;
+    margin: 0 1rem;
+    padding: 0.2rem;
+    display: block;
+    padding-right: 20px;
+  }
+  
+  li:hover {
+    color: var(--color-text-);
+    cursor: pointer;
+  }
+  
+  li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+
+  p{
+    color: var(--color-);
+  }
+
+
+/**/
+section {
+  scroll-margin-top: 90px;
+}
+  
+
+/*perfil*/
+#Sobre_mi {
+  width: 100%;
+  text-align: center;
+  font-size: 1.9rem;
+  padding: 9rem 0;
+}
+
+#Sobre_mi > h1 {
+  font-size: 5rem;
+  margin: 0;
+  color: var(--color-);
+}
+
+#Sobre_mi > p {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  color: #dfdfe2;
+}
+
+#Sobre_mi > .profile-img {
+  border-radius: 50%;
+  width: 200px;  /* Puedes ajustar el tamaño de la imagen */
+  height: 200px;
+  margin-top: 20px;
+}
+
+/**/
+
+h2{
+  color: var(--color-);
+  font-size: 2rem;
+  padding-left: 4rem;
+}
+
+
+.habilidad {
+  display: flex;
+  gap: 15px; 
+  padding: 0 7rem 0 7rem;
+  flex-wrap: wrap;
+}
+
+.habilidad_blan {
+  display: flex;
+  gap: 15px; 
+  padding: 1.3rem 7rem 0 7rem;
+  flex-wrap: wrap;
+}
+
+.habilidad-item {
+  font-size: 17px;
+  padding: 5px 10px;
+  background-color: #343d42;
+  color: white;
+  border-radius: 5px;
+}
+
+.habilidad-item:hover {
+  background-color: #78857d; 
+  color: white;
+}
+
+.habilidad-item i {
+  font-size: 21px;
+  margin-right: 2.5px; 
+}
+
+/* Colores para los ico*/
+.habilidad-item i.fa-html5 {
+  color: #e44d26; 
+}
+
+.habilidad-item i.fa-css3-alt {
+  color: #2965f1; 
+}
+
+.habilidad-item i.fa-java {
+  color: #f8b400; 
+}
+
+.habilidad-item i.fa-github {
+  color: #eeeeee; 
+}
+
+.habilidad-item i.fa-code{
+  color: #007acc;
+}
+
+@media (max-width: 768px) {
+  .habilidad {
+    padding: 0 7rem 0 7rem;
+  }
+  .habilidad-item {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+/*certi*/
+
+.certi {
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+
+.certificado-item {
+  width: 450px;
+  height: 200px;
+  overflow: hidden; 
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificado-item img {
+  width: 100%; 
+  height: 100%; 
+  transition: 0.3s ease;
+}
+
+.certificado-item img:hover {
+  transform: scale(1.1); 
+}
+
+
+
+.contac {
+  text-align: center;
+  padding: 2rem;
+}
+
+.contac a {
+  display: inline-block;
+  margin: 1rem;
+  text-decoration: none;
+  color: #e7e4e4;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.contac a:hover {
+  color: #0077b5; 
+}
+
+.contac i {
+  margin-right: 0.5rem;
+}
+
+
+
+
+
+  @media (max-width: 768px) {
+    #navbar {
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+  
+  
+  img{
+    border-radius: 50%;
+  }
+  
+
+
