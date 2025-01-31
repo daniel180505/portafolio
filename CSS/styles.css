@@ -11,23 +11,25 @@ body {
 }
 
 :root{
-  --color-:white;
+  --color-text-:white;
+  --color-ini-fin-: #060606;
 }
 
 /* encabezado*/
-header{
-  color: var(--color-);
+header a{
+  color: var(--color-text-);
   padding-left: 30px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
+  text-decoration: none;
 }
 
 
 
 #navbar {
   width: 100%;
-  height: 80px;
-  background-color: #060606;
+  height: 75px;
+  background-color: var(--color-ini-fin-);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,8 +80,11 @@ header{
     text-align: center;
     background-color: #060606;
     position: absolute;
-    top: 70px;
+    top: 65px;
     left: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
 
   #menu-toggle:checked + .menu-icon + #menu {
@@ -92,8 +97,10 @@ header{
   }
 
   #menu li {
-    margin: 1rem 0;
-    padding: 0;
+    width: 100%; 
+    margin: 0;
+    padding: 1rem 0; 
+    text-align: center;
   }
 }
 
@@ -101,7 +108,7 @@ header{
 
 /*Del nav*/
 section {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 26px;
 }
   
 
@@ -110,7 +117,8 @@ section {
   width: 100%;
   text-align: center;
   font-size: 1.9rem;
-  padding: 7rem 0;
+  padding-top: 7rem;
+  padding-bottom: 1rem;
   display: flex; 
   flex-direction: column; 
   align-items: center; 
@@ -158,6 +166,10 @@ section {
 }
 
 @media(max-width: 768px) {
+  #Inicio{
+    padding-bottom: 6rem;
+  }
+  
   #Inicio > a {
     width: 35%; 
     padding: 15px;
@@ -169,14 +181,31 @@ section {
 }
 
 
-/*PROYECTOS y PROYECTOS*/
+/*PROYECTOS y Proyectos*/
 
-#Portafolio {
+#Proyectos {
   text-align: center;
-  padding: 40px 20px;
-  display: flex;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  display: block;
+  flex-direction: column;
   flex-wrap: wrap;  
   justify-content: center; 
+}
+
+#Proyectos h2 {
+  margin-bottom: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contenedor-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
 }
 
 .proyecto {
@@ -201,7 +230,7 @@ section {
 }
 
 .descripcion {
-  margin-top: 15px;
+  margin-top: -10px;
 }
 
 .descripcion h3 {
@@ -236,9 +265,17 @@ section {
   background-color: #005c8c;
 }
 
+.botones a:nth-child(2) button {
+  background-color: transparent !important;
+  border: 2px solid #eee0e0;
+  color: #ffffff !important;
+}
+
+
+
 /* Media Queries */
 @media (min-width: 768px) {
-  #Portafolio {
+  #Proyectos {
     margin: 1rem;
   }
 
@@ -263,7 +300,7 @@ section {
 
 h2{
   color: var(--color-);
-  font-size: 2rem;
+  font-size: 2.1rem;
   text-align: center;
 }
 
@@ -321,6 +358,10 @@ h2{
   color: #f8b400; 
 }
 
+.habilidad-item i.fa-js {
+  color: #f8b400; 
+}
+
 .habilidad-item i.fa-github {
   color: #eeeeee; 
 }
@@ -341,7 +382,8 @@ h2{
     gap: 10px;
   }
   .habilidad_blan {
-    padding: 1.1rem 2rem 0 2rem; 
+    padding: 1.5rem 2rem 0 2rem; 
+    gap: 10px;
   }
   .habilidad-item {
     font-size: 18px;
@@ -358,7 +400,7 @@ h2{
 
 #Certificados{
   margin: 2rem 0 2rem 0;
-  padding: 40px 0 4rem 0; 
+  padding: 40px 0 2rem 0; 
 }
 
 .certi {
@@ -499,9 +541,12 @@ form input[type="submit"]:hover {
   margin-right: 0.2rem;
 }
 
+
+/* footer */
 .footer_texto{
+  padding: 20px;
+  background-color: var(--color-ini-fin-);
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #d8d4d4;
-  margin-bottom: 10px;
 }

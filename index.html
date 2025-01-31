@@ -6,6 +6,7 @@
     <title>Portafolio-Daniel</title>
     
     <!-- Hoja de estilo -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/styles.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -15,14 +16,14 @@
   </head>
   <body>
     <nav id="navbar">
-      <header>VDHV</header>
+      <header><a href="">VDHV</a></header>
       <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="menu-icon">
-        <i class="fas fa-bars"></i> <!-- Ícono de hamburguesa -->
+        <i class="fas fa-bars"></i>
       </label>
       <ul id="menu">
         <li><a href="#Inicio">INICIO</a></li>
-        <li><a href="#Portafolio">PORTAFOLIO</a></li>
+        <li><a href="#Proyectos">PROYECTOS</a></li>
         <li><a href="#Habilidades">HABILIDADES</a></li>
         <li><a href="#Certificados">CERTIFICADOS</a></li>
         <li><a href="#Contacto">CONTACTO</a></li>
@@ -39,57 +40,62 @@
     </section>    
 
     <!-- Proyectos -->
-    <section id="Portafolio">
-      <h2>Portafolio</h2>
-
-      <div class="proyecto">
-        <img src="IMAGE/cisco_term.PNG" alt="Proyecto 1" class="imagen-proyecto">
-        <div class="descripcion">
-          <h3>Proyecto 1</h3>
-          <p>Descripción breve del proyecto, lo que hace, los objetivos y cualquier detalle relevante.Descripción breve del proyecto, lo que hace, los objetivos y cualquier detalle relevante.</p>
+    <section id="Proyectos">
+      <h2>Proyectos</h2>
+      <div class="contenedor-proyectos">
+        <div class="proyecto" data-aos="zoom-in">
+          <img src="IMAGE/cisco_term.PNG" alt="Proyecto 1" class="imagen-proyecto">
+          <div class="descripcion">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto, lo que hace, los objetivos y cualquier detalle relevante.</p>
+          </div>
+          <div class="botones">
+            <a href="https://github.com/daniel180505/portafolio"><button>Ver Proyecto</button></a>
+            <a href="https://github.com/daniel180505/portafolio"><button><i class="bi bi-github"></i> Repositorio</button></a>
+          </div>
         </div>
-        <div class="botones">
-          <button>Ver Proyecto</button>
-          <button>Codigo</button>
+    
+        <div class="proyecto" data-aos="zoom-in">
+          <img src="IMAGE/Portafolio.PNG" alt="Portafolio" class="imagen-proyecto">
+          <div class="descripcion">
+            <h3>Portafolio</h3>
+            <p>Mi portafolio web personal presenta una selección de proyectos destacados.</p>
+          </div>
+          <div class="botones">
+            <a href="https://daniel180505.github.io/portafolio/"><button>Ver Proyecto</button></a>
+            <a href="https://github.com/daniel180505/portafolio"><button><i class="bi bi-github"></i> Repositorio</button></a>
+          </div>
         </div>
-      </div>
-      <div class="proyecto">
-        <img src="IMAGE/Portafolio.PNG" alt="Proyecto 1" class="imagen-proyecto">
-        <div class="descripcion">
-          <h3>Portafolio</h3>
-          <p>Mi portafolio web personal presenta una selección de proyectos destacados, habilidades técnicas y certificados, demostrando mi progreso y experiencia en desarrollo web.</p>
-        </div>
-        <div class="botones">
-          <button onclick="verProyecto()">Ver Proyecto</button>
-          <button onclick="Codigo()">Codigo</button>
-        </div>
-      </div>
-      <div class="proyecto">
-        <img src="IMAGE/cisco_term.PNG" alt="Proyecto 1" class="imagen-proyecto">
-        <div class="descripcion">
-          <h3>Proyecto 3</h3>
-          <p>Descripción breve del proyecto, lo que hace, los objetivos y cualquier detalle relevante.</p>
-        </div>
-        <div class="botones">
-          <button onclick="verProyecto()">Ver Proyecto</button>
-          <button onclick="Codigo()">Codigo</button>
+    
+        <div class="proyecto" data-aos="zoom-in">
+          <img src="IMAGE/cisco_term.PNG" alt="Proyecto 3" class="imagen-proyecto">
+          <div class="descripcion">
+            <h3>Proyecto 3</h3>
+            <p>Descripción breve del proyecto, lo que hace, los objetivos y cualquier detalle relevante.</p>
+          </div>
+          <div class="botones">
+            <a href="https://github.com/daniel180505/portafolio"><button>Ver Proyecto</button></a>
+            <a href="https://github.com/daniel180505/portafolio"><button><i class="bi bi-github"></i> Repositorio</button></a>
+          </div>
         </div>
       </div>
     </section>
+    
 
     <!-- Habilidades -->
     <section id="Habilidades">
       <h2>Habilidades</h2>
       <div class="habilidad">
         <span class="habilidad-item"><i class="fab fa-html5"></i> HTML</span>
-        <span class="habilidad-item"><i class="fab fa-css3-alt"></i> CSS</span>
+        <span class="habilidad-item"><i class="fab fa-css3-alt"></i> CSS (intermedio)</span>
         <span class="habilidad-item"><i class="fab fa-java"></i> Java (básico)</span>
+        <span class="habilidad-item"><i class="fab fa-js"></i> JS (básico)</span>
         <span class="habilidad-item"><i class="fas fa-database"></i> MySQL</span>
+        <span class="habilidad-item"><i class="fas fa-database"></i> SQL Server</span>
         <span class="habilidad-item"><i class="bi bi-github"></i> GitHub</span>
         <span class="habilidad-item"><i class="bi bi-git"></i> Git</span>
-        <span class="habilidad-item"><i class="fas fa-code"></i> VSCode</span>
-        <span class="habilidad-item"><i class="fas fa-lightbulb"></i> IntelliJ</span>
       </div>
+
       <div class="habilidad_blan">
         <span class="habilidad-item">Trabajo en equipo</span>
         <span class="habilidad-item">Respeto</span>
@@ -131,12 +137,12 @@
     <section id="Contacto">
       <h2>Contacto</h2>
       <form>
-        <p>Completa el formulario a continuación, y me pondre en contacto contigo lo antes posible.</p>
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Email" required >
-        <input type="text" placeholder="Asunto" required>
-        <textarea id="" rows="5" cols="30" placeholder="Mensaje" required></textarea>
-        <input type="submit"  value="Enviar">
+        <p data-aos="fade-up">Completa el formulario a continuación, y me pondre en contacto contigo lo antes posible.</p>
+        <input type="text" placeholder="Nombre" required data-aos="fade-up">
+        <input type="email" placeholder="Email" required data-aos="fade-up">
+        <input type="text" placeholder="Asunto" required data-aos="fade-up">
+        <textarea id="" rows="5" cols="30" placeholder="Mensaje" required data-aos="fade-up"></textarea>
+        <input type="submit"  value="Enviar" data-aos="fade-up">
       </form>
     </section>
 </main>
@@ -160,6 +166,13 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 500,
+      once: true
+    });
+  </script>
   </body>
 </html> 
 
