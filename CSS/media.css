@@ -83,8 +83,12 @@
 
   /* proyectos */
   #Proyectos {
-    margin-top: 5rem;
+    margin-top: 3.5rem;
     padding: 1rem;
+  }
+
+  #Proyectos h2{
+    padding-top: 1.5rem;
   }
 
   .proyecto {
