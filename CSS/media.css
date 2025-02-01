@@ -1,0 +1,151 @@
+/* Media Queries */
+
+/* Mobiles Styles (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Menu */
+    #menu {
+      align-items: center;
+      background-color: #060606;
+      display: none;
+      flex-direction: column;
+      left: 0;
+      padding: 0;
+      position: absolute;
+      text-align: center;
+      top: 65px;
+      width: 100%;
+    }
+  
+    #menu-toggle:checked + .menu-icon + #menu {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+      width: 50px;
+    }
+  
+    #menu li {
+      margin: 0;
+      padding: 1rem 0;
+      text-align: center;
+      width: 100%;
+    }
+  
+    /* Inicio Section */
+    #Inicio {
+      margin-top: 5rem;
+      height: auto; /* Ajusta la altura automáticamente */
+      padding: 2rem 1rem; /* Añade padding para un mejor espaciado */
+    }
+  
+    #Inicio .container {
+      flex-direction: column; /* Cambia la dirección del contenedor a columna */
+      align-items: center; /* Centra los elementos */
+    }
+  
+    #Inicio .text-container {
+      text-align: center; /* Centra el texto */
+      padding-right: 0; /* Elimina el padding derecho */
+    }
+    
+    #Inicio .profile-img {
+      width: 70%;
+      max-width: 300px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+  
+    #Inicio h2 {
+      font-size: 2rem; /* Ajusta el tamaño de la fuente */
+      justify-content: center; /* Centra el texto */
+    }
+  
+    #Inicio h1 {
+      font-size: 2.5rem; /* Ajusta el tamaño de la fuente */
+    }
+  
+    #Inicio p {
+      font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
+      margin-bottom: 1.5rem; /* Ajusta el margen inferior */
+    }
+  
+    #Inicio .botones {
+      justify-content: center; /* Centra el botón */
+      margin-top: 2rem; /* Añade un margen superior */
+    }
+  
+    #Inicio .btn {
+      display: block;
+      margin: 0 auto; /* Centra el botón */
+      padding: 0.7rem 1rem; /* Ajusta el padding del botón */
+    }
+  
+
+    /* proyectos */
+    #Proyectos {
+      margin: 1rem;
+    }
+  
+    .proyecto {
+      width: 80%;
+    }
+
+
+    /* Habilidades Section */
+    .habilidad {
+      gap: 10px;
+      justify-content: center;
+      padding: 0 2rem;
+    }
+  
+    .habilidad_blan {
+      gap: 10px;
+      padding: 1.5rem 2rem 0;
+    }
+  
+    .habilidad-item {
+      font-size: 18px;
+      padding: 5px 8px;
+    }
+  
+    /* Certificados Section */
+    .certificado-item {
+      height: 200px;
+      width: 300px;
+    }
+  
+    .certificado-item img {
+      transition: none;
+    }
+  
+    .certificado-item img:hover {
+      transform: none;
+    }
+  
+    /* Contacto Section */
+    form {
+      width: 75%;
+    }
+  
+    form input, form textarea {
+      width: 90%;
+    }
+  
+    form input[type="submit"] {
+      width: 60%;
+    }
+  }
+  
+  /* Tablet Styles (min-width: 768px) */
+  @media (min-width: 768px) {
+    /* Proyectos Section */
+    #Proyectos {
+      margin: 1rem;
+    }
+  
+    .proyecto {
+      width: 45%;
+    }
+  }
+  

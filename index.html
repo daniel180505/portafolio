@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio-Daniel</title>
-    
-    <!-- Hoja de estilo -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/styles.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Daniel</title>
+  
+  <!-- Hoja de estilo -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/media.css">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!-- Iconos redes-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  </head>
-  <body>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Iconos redes-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Navbar -->
     <nav id="navbar">
       <header><a href="">VDHV</a></header>
       <input type="checkbox" id="menu-toggle">
@@ -29,29 +30,38 @@
         <li><a href="#Contacto">CONTACTO</a></li>
       </ul>
     </nav>
+
   <main>
      <!-- Sobre mi -->
      <section id="Inicio">
-      <h1>Daniel</h1>
-      <p>Soy estudiante de Ing. Sistemas</p>
-      <p>Frontend Developer</p>
-      <img class="profile-img" src="IMAGE/Programador.PNG" alt="Foto de perfil">
-      <a href="ruta/del/cv.pdf" target="_blank">Ver mi CV</a>
-    </section>    
+      <div class="container">
+        <div class="text-container">
+          <h2>Hola! Soy</h2>
+          <h1>Daniel Huanachin</h1>
+          <p id="typing-text"></p>
+          <div class="botones">
+            <a href="https://daniel180505.github.io/Restaurante/" target="_blank"><button>Descargar CV</button></a>          
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="profile-img" src="IMAGE/Programador.PNG" alt="Foto de perfil">
+        </div>
+      </div>
+    </section>
 
     <!-- Proyectos -->
     <section id="Proyectos">
       <h2>Proyectos</h2>
       <div class="contenedor-proyectos">
         <div class="proyecto" data-aos="zoom-in">
-          <img src="IMAGE/cisco_term.PNG" alt="Proyecto 1" class="imagen-proyecto">
+          <img src="IMAGE/Restaurante.PNG" alt="Restaurante" class="imagen-proyecto">
           <div class="descripcion">
-            <h3>Proyecto 1</h3>
+            <h3>Restaurante</h3>
             <p>Descripción breve del proyecto, lo que hace, los objetivos y cualquier detalle relevante.</p>
           </div>
           <div class="botones">
-            <a href="https://github.com/daniel180505/portafolio"><button>Ver Proyecto</button></a>
-            <a href="https://github.com/daniel180505/portafolio"><button><i class="bi bi-github"></i> Repositorio</button></a>
+            <a href="https://daniel180505.github.io/Restaurante/" target="_blank"><button>Ver Proyecto</button></a>
+            <a href="https://github.com/daniel180505/Restaurante" target="_blank"><button><i class="bi bi-github"></i> Repositorio</button></a>
           </div>
         </div>
     
@@ -62,8 +72,8 @@
             <p>Mi portafolio web personal presenta una selección de proyectos destacados.</p>
           </div>
           <div class="botones">
-            <a href="https://daniel180505.github.io/portafolio/"><button>Ver Proyecto</button></a>
-            <a href="https://github.com/daniel180505/portafolio"><button><i class="bi bi-github"></i> Repositorio</button></a>
+            <a href="https://daniel180505.github.io/portafolio/" target="_blank"><button>Ver Proyecto</button></a>
+            <a href="https://github.com/daniel180505/portafolio" target="_blank"><button><i class="bi bi-github"></i> Repositorio</button></a>
           </div>
         </div>
     
@@ -89,7 +99,7 @@
         <span class="habilidad-item"><i class="fab fa-html5"></i> HTML</span>
         <span class="habilidad-item"><i class="fab fa-css3-alt"></i> CSS (intermedio)</span>
         <span class="habilidad-item"><i class="fab fa-java"></i> Java (básico)</span>
-        <span class="habilidad-item"><i class="fab fa-js"></i> JS (básico)</span>
+        <span class="habilidad-item"><i class="fab fa-js"></i> JavaScript (básico)</span>
         <span class="habilidad-item"><i class="fas fa-database"></i> MySQL</span>
         <span class="habilidad-item"><i class="fas fa-database"></i> SQL Server</span>
         <span class="habilidad-item"><i class="bi bi-github"></i> GitHub</span>
@@ -98,11 +108,11 @@
 
       <div class="habilidad_blan">
         <span class="habilidad-item">Trabajo en equipo</span>
-        <span class="habilidad-item">Respeto</span>
-        <span class="habilidad-item">Honestidad</span>
         <span class="habilidad-item">Puntualidad</span>
+        <span class="habilidad-item">Resiliencia</span>
         <span class="habilidad-item">Responsabilidad</span>
         <span class="habilidad-item">Solución de problemas</span>
+        <span class="habilidad-item">Respeto</span>
       </div>
     </section>
     
@@ -145,7 +155,9 @@
         <input type="submit"  value="Enviar" data-aos="fade-up">
       </form>
     </section>
-</main>
+  </main>
+
+  <!-- Footer -->
   <footer>
     <div class="redes">
       <a href="https://www.linkedin.com/in/victorcito-huanachin-274671288/" target="_blank">
@@ -166,6 +178,8 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="JS/Script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -173,6 +187,6 @@
       once: true
     });
   </script>
-  </body>
+</body>
 </html> 
 
