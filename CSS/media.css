@@ -94,6 +94,7 @@
 
     #Proyectos .botones {
       display: flex;
+      justify-content: center;
       align-items: center;
       flex-direction: row; 
       gap: 0; 
@@ -102,6 +103,8 @@
   .botones button {
     font-size: 14px;
   }
+
+
 
 
     /* Habilidades Section */
