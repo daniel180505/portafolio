@@ -2,154 +2,152 @@
 
 /* Mobiles Styles (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Menu */
-    #menu {
-      align-items: center;
-      background-color: #060606;
-      display: none;
-      flex-direction: column;
-      left: 0;
-      padding: 0;
-      position: absolute;
-      text-align: center;
-      top: 65px;
-      width: 100%;
-    }
-  
-    #menu-toggle:checked + .menu-icon + #menu {
-      display: flex;
-    }
-  
-    .menu-icon {
-      display: block;
-      width: 50px;
-    }
-  
-    #menu li {
-      margin: 0;
-      padding: 1rem 0;
-      text-align: center;
-      width: 100%;
-    }
-  
-    /* Inicio Section */
-    #Inicio {
-      margin-top: 5rem;
-      height: auto; 
-      padding: 2rem 1rem; 
-    }
-  
-    #Inicio .container {
-      flex-direction: column; 
-      align-items: center; 
-    }
-  
-    #Inicio .text-container {
-      text-align: center; 
-      padding-right: 0;
-    }
-    
-    #Inicio .profile-img {
-      width: 70%;
-      max-width: 300px;
-      border-radius: 50%;
-      margin-top: 20px;
-    }
-  
-    #Inicio h2 {
-      font-size: 2rem; 
-      justify-content: center; 
-    }
-  
-    #Inicio h1 {
-      font-size: 2.5rem;
-    }
-  
-    #Inicio p {
-      font-size: 1.2rem; 
-      margin-bottom: 1.5rem; 
-    }
-  
-    #Inicio .botones {
-      justify-content: center; 
-      margin-top: 2rem; 
-    }
-  
-    #Inicio .btn {
-      display: block;
-      margin: 0 auto;
-      padding: 0.7rem 1rem; 
-    }
-  
-
-    /* proyectos */
-    #Proyectos {
-      margin-top: 2.7rem;
-      padding: 1rem;
-    }
-  
-    .proyecto {
-      width: 85%;
-    }
-
-    #Proyectos .botones {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row; 
-      gap: 0; 
+  /* Menu */
+  #menu {
+    align-items: center;
+    background-color: #060606;
+    display: none;
+    flex-direction: column;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 65px;
+    width: 100%;
   }
 
-  .botones button {
-    font-size: 14px;
+  #menu-toggle:checked + .menu-icon + #menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 50px;
+  }
+
+  #menu li {
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Inicio Section */
+  #Inicio {
+    height: auto; 
+    padding-top: 8rem;
+  }
+
+  #Inicio .container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  #Inicio .text-container {
+    text-align: center; 
+    padding-right: 0;
+  }
+  
+  #Inicio .profile-img {
+    width: 70%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin-top: 1px;
+  }
+
+  #Inicio h2 {
+    font-size: 2rem; 
+    justify-content: center; 
+  }
+
+  #Inicio h1 {
+    font-size: 2.5rem;
+  }
+
+  #Inicio p {
+    font-size: 1.2rem; 
+    margin-bottom: 1.5rem; 
+  }
+
+  #Inicio .botones {
+    justify-content: center; 
+    margin-top: 2rem; 
+  }
+
+  #Inicio .btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.7rem 1rem; 
   }
 
 
-
-
-    /* Habilidades Section */
-    .habilidad {
-      gap: 10px;
-      justify-content: center;
-      padding: 0 2rem;
-    }
-  
-    .habilidad_blan {
-      gap: 10px;
-      padding: 1.5rem 2rem 0;
-    }
-  
-    .habilidad-item {
-      font-size: 18px;
-      padding: 5px 8px;
-    }
-  
-    /* Certificados Section */
-    .certificado-item {
-      height: 200px;
-      width: 300px;
-    }
-  
-    .certificado-item img {
-      transition: none;
-    }
-  
-    .certificado-item img:hover {
-      transform: none;
-    }
-  
-    /* Contacto Section */
-    form {
-      width: 75%;
-    }
-  
-    form input, form textarea {
-      width: 90%;
-    }
-  
-    form input[type="submit"] {
-      width: 60%;
-    }
+  /* proyectos */
+  #Proyectos {
+    margin-top: 5rem;
+    padding: 1rem;
   }
-  
-  
+
+  .proyecto {
+    width: 85%;
+  }
+
+  #Proyectos .botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    gap: 0; 
+}
+
+.botones button {
+  font-size: 14px;
+}
+
+
+
+
+  /* Habilidades Section */
+  .habilidad {
+    gap: 10px;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
+  .habilidad_blan {
+    gap: 10px;
+    padding: 1.5rem 2rem 0;
+  }
+
+  .habilidad-item {
+    font-size: 18px;
+    padding: 5px 8px;
+  }
+
+  /* Certificados Section */
+  .certificado-item {
+    height: 200px;
+    width: 300px;
+  }
+
+  .certificado-item img {
+    transition: none;
+  }
+
+  .certificado-item img:hover {
+    transform: none;
+  }
+
+  /* Contacto Section */
+  form {
+    width: 75%;
+  }
+
+  form input, form textarea {
+    width: 90%;
+  }
+
+  form input[type="submit"] {
+    width: 60%;
+  }
+}
+

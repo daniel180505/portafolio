@@ -118,11 +118,12 @@ section {
 #Inicio{
   height: 100vh;
   margin-top: -1rem;
+  padding: 2rem 1rem;
+  margin-bottom: -2.2rem;
 }
 
 .text-container {
   flex: 1;
-  text-align: left;
   text-align: start;
 }
 
@@ -150,6 +151,7 @@ section {
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .profile-img {
