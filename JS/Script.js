@@ -1,8 +1,10 @@
+/* Inicio*/
+
 document.addEventListener("DOMContentLoaded", function() {
   const text = "Desarrollador web Front-end";
   let index = 0;
-  const typingSpeed = 80; // Velocidad de escritura en milisegundos
-  const cursor = '<span class="cursor">|</span>'; // Cursor parpadeante
+  const typingSpeed = 75; 
+  const cursor = '<span class="cursor">|</span>';
 
   function typeWriter() {
     if (index < text.length) {
@@ -17,5 +19,23 @@ document.addEventListener("DOMContentLoaded", function() {
   typeWriter();
 });
 
+/* Scroll */
 
+// Mostrar/ocultar el botón de desplazamiento hacia arriba
+window.addEventListener("scroll", function() {
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  if (window.scrollY > 200) { // Mostrar el botón cuando se desplaza hacia abajo 300px
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+});
+
+// Desplazarse hacia arriba cuando se hace clic en el botón
+document.getElementById("scrollToTopBtn").addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
 

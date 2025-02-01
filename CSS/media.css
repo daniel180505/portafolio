@@ -125,7 +125,14 @@
   .habilidad-item {
     font-size: 18px;
     padding: 5px 8px;
+    transition: none;
   }
+
+  .habilidad-item:hover {
+    background-color: #343d42; 
+    transform: none; 
+  }
+
 
   /* Certificados Section */
   .certificado-item {
@@ -142,6 +149,10 @@
   }
 
   /* Contacto Section */
+  #Contacto {
+    padding-top: 1.5rem;
+  }
+  
   form {
     width: 75%;
   }
