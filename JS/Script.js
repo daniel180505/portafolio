@@ -1,7 +1,7 @@
 /* Inicio*/
 
 document.addEventListener("DOMContentLoaded", function() {
-  const text = "Desarrollador web Front-end";
+  const text = "Desarrollador web Full Stack";
   let index = 0;
   const typingSpeed = 75; 
   const cursor = '<span class="cursor">|</span>';
